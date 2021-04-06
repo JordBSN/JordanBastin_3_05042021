@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oh my food</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -9,8 +10,8 @@
 <!-- ------------------------------- -->
 <!--  ---------  header ------------ -->
 <!-- ------------------------------- -->
-<header>
-    <img class="header__logo" src="assets/images/logo/ohmyfood@2x.svg" alt="logo">
+<header class="header">
+    <h1 class="header__logo">Ohmyfood</h1>
 </header>
 
 <!-- ------------------------------- -->
@@ -19,9 +20,9 @@
 <main class="main__accueil">
     <!--  ---------  explore ------------ -->
     <section class="explore">
-        <div>
-            <img class="icons" src="assets/images/Icons/alternate-map-marker.svg" alt="">
-            <p class="explore__places">Paris, Belleville</p>
+        <div class="explore__place">
+            <img class="explore__place__icons" src="assets/images/Icons/alternate-map-marker.svg" alt="">
+            <p class="explore__place__name">Paris, Belleville</p>
         </div>
         <h2 class="explore__title">Réservez le menu qui vous convient</h2>
         <p class="explore__text">Découvrez des restaurants d'exception, séléctionnés par nos soins </p>
@@ -30,33 +31,33 @@
 
     <!--  ---------  mod operator ------------ -->
     <section class="mod-operator">
-        <h2 class="mod-operator__tittle">Fonctionnement</h2>
-        <ul>
-            <li class="mod-operator__list">
-                <div>1</div>
-                <img class="icons" src="assets/images/Icons/mobile-phone-solid.svg" alt="">
-                Choisissez un restaurant
+        <h2 class="mod-operator__title">Fonctionnement</h2>
+        <ul class="mod-operator__list">
+            <li class="mod-operator__list__item">
+                <div class="mod-operator__list__item__number">1</div>
+                <img class="mod-operator__list__item__icons" src="assets/images/Icons/mobile-phone-solid.svg" alt="">
+                <p class="mod-operator__list__item__txt">Choisissez un restaurant</p>
             </li>
-            <li class="mod-operator__list">
-                <div>2</div>
-                <img class="icons" src="assets/images/Icons/list-ul.svg" alt="">
-                Composez votre menu
+            <li class="mod-operator__list__item">
+                <div class="mod-operator__list__item__number">2</div>
+                <img class="mod-operator__list__item__icons" src="assets/images/Icons/list-ul.svg" alt="">
+                <p class="mod-operator__list__item__txt">Composez votre menu</p>
             </li>
-            <li class="mod-operator__list">
-                <div>3</div>
-                <img class="icons" src="assets/images/Icons/store.svg" alt="">
-                Dégustez au restaurant
+            <li class="mod-operator__list__item">
+                <div class="mod-operator__list__item__number">3</div>
+                <img class="mod-operator__list__item__icons" src="assets/images/Icons/store.svg" alt="">
+                <p class="mod-operator__list__item__txt">Dégustez au restaurant</p>
             </li>
         </ul>
     </section>
 
     <!--  ---------  restaurants ------------ -->
     <section class="restaurants">
-        <h2 class="restaurants__tittle"> Restaurants</h2>
+        <h2 class="restaurants__title"> Restaurants</h2>
         <article class="restaurants__content">
             <a href="la_palette_du_gout.html">
                 <figure>
-                    <img class="icons" src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                    <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                          alt="La palette du goût">
                     <figcaption>La palette du goût</figcaption>
                 </figure>
@@ -91,8 +92,8 @@
                          alt="Le délice des sens">
                     <figcaption>Le délice des sens</figcaption>
                     <p>Folie-Méricourt</p>
-                    <img class="icons" src="assets/images/Icons/white-heart.svg" alt="">
                 </figure>
+                <img class="icons" src="assets/images/Icons/white-heart.svg" alt="">
             </a>
         </article>
     </section>
