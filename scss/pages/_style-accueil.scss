@@ -1,22 +1,25 @@
 main {
   margin: 0 0 0 auto;
 }
+
 // ---------  explore ------------
 .explore {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  background-color: rgb(243, 243, 243);
+  background-color: #fafafa;
   position: relative;
+  padding: 0 0 2rem 0;
 
   &__place {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    background-color: #f3f3f3;
 
     &__icons {
-      width: 1.5rem;
-      height: 1.5rem;
+      position: relative;
+      top: 1rem;
       margin-right: 1rem;
     }
   }
@@ -30,6 +33,20 @@ main {
     display: flex;
     justify-content: center;
   }
+
+  &__btn {
+    position: relative;
+    left: 32rem;
+    width: 19rem;
+    height: 5rem;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+    background: linear-gradient(0deg, $color-primary, $color-secondary);
+    color: #FFFFFF;
+    border: 0;
+  }
 }
 
 // ---------  mod-operator ------------
@@ -38,6 +55,7 @@ main {
   flex-flow: column wrap;
   justify-content: center;
   margin-left: auto;
+  padding: 1rem 0 1rem 0;
 
   &__title {
     display: flex;
@@ -78,9 +96,8 @@ main {
       }
 
       &__icons {
-        width: 2rem;
-        height: 2rem;
         position: relative;
+        top: 0;
         left: -2.5rem;
       }
 
@@ -96,33 +113,58 @@ main {
 // --------- restaurants ------------
 .restaurants {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-flow: row wrap;
   background-color: rgb(243, 243, 243);
-  width: 100%;
 
   &__title {
+    position: relative;
+    left: 2rem;
     display: flex;
     flex-basis: 100%;
-    margin-left: 5rem;
+
   }
+
   &__content {
     background-color: #FFFFFF;
     width: 40rem;
     height: 20rem;
-    margin: 0 0 4rem 0;
-    border-radius:2rem;
+    margin: 0 0.5rem 2rem 0.5rem;
+    border-radius: 2rem;
     position: relative;
-    left: 1rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
   }
-  &__content figure img {
-    object-fit: cover;
-    width: 40rem;
-    height: 15rem;
-    border-radius:2rem 2rem 0 0;
-    position: relative;
-    left: -2.5rem;
-    top: -1rem;
 
+  &__content figure {
+    & img {
+      object-fit: cover;
+      width: 40rem;
+      height: 15rem;
+      border-radius: 2rem 2rem 0 0;
+      position: relative;
+      left: -2.5rem;
+      top: -1rem;
+    }
+
+    & figcaption {
+      position: relative;
+      top: -0.5rem;
+      left: -1rem;
+      font-weight: bolder;
+      font-size: 1.4rem;
+    }
+
+    & p {
+      position: relative;
+      top: -1rem;
+      left: -1rem;
+      font-size: 1.1rem;
+    }
+  }
+
+  & i {
+    position: relative;
+    top: -5rem;
+    left: 35rem;
   }
 }
