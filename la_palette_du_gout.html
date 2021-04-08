@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <title>La palette du goût</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/7d17636476.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <!-- ------------------------------- -->
 <!--  ---------  header ------------ -->
 <!-- ------------------------------- -->
-<header>
-    <a href="accueil.html">retour</a>
+<header class="header">
+    <a class="header__return" href="accueil.html"><i class="fa-arrow-left fas fa-lg"></i></a>
     <img class="header__logo" src="assets/images/logo/ohmyfood@2x.svg" alt="logo">
     <img class="header__img" src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
 </header>
@@ -18,10 +20,10 @@
 <!-- ------------------------------- -->
 <!--  ---------  main ------------ -->
 <!-- ------------------------------- -->
-<main class="main__restaurent">
-    <h2 class="restaurent__tittle"> La palette du goût</h2>
+<main class="restaurent">
+    <h2 class="restaurent__title"> La palette du goût</h2>
     <div class="restaurent__icons">
-        <img class="icons" src="assets/images/icons/utensils.svg" alt="">
+        <i class="far fa-heart fa-2x"></i>
     </div>
     <!--  ---------  starter ------------ -->
     <article class="starter">
@@ -82,8 +84,7 @@
             <div class="plat__price">23€</div>
         </section>
     </article>
-
-    <button class="order">Commander</button>
+    <button class="restaurent__order">Commander</button>
 </main>
 
 <!-- ------------------------------- -->

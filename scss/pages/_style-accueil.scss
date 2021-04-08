@@ -15,7 +15,7 @@ main {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    background-color: #f3f3f3;
+    background-color: $bg-color-primary;
 
     &__icons {
       position: relative;
@@ -35,17 +35,7 @@ main {
   }
 
   &__btn {
-    position: relative;
-    left: 32rem;
-    width: 19rem;
-    height: 5rem;
-    border-radius: 3rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
-    background: linear-gradient(0deg, $color-primary, $color-secondary);
-    color: #FFFFFF;
-    border: 0;
+    @include btn(32rem, 0 ,20rem, 4rem);
   }
 }
 
@@ -75,11 +65,12 @@ main {
       justify-content: center;
       align-items: center;
       width: 20rem;
-      height: 5rem;
-      margin-right: 2rem;
-      border-radius: 2rem;
-      background-color: rgb(243, 243, 243);
-      box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+      height: 4rem;
+      margin-right: 3rem;
+      padding-right: 3rem;
+      border-radius: 1rem;
+      background-color: $bg-color-primary;
+      box-shadow: $box-shadow;
 
       &__number {
         display: flex;
@@ -92,7 +83,7 @@ main {
         width: 2rem;
         height: 2rem;
         position: relative;
-        left: -3.5rem;
+        left: -4rem;
       }
 
       &__icons {
@@ -115,7 +106,7 @@ main {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: rgb(243, 243, 243);
+  background-color: $bg-color-primary;
 
   &__title {
     position: relative;
@@ -130,9 +121,14 @@ main {
     width: 40rem;
     height: 20rem;
     margin: 0 0.5rem 2rem 0.5rem;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     position: relative;
-    box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+    box-shadow: $box-shadow;
+    transition: transform .2s;
+
+    &:hover {
+      transform: scale(1.01);
+    }
   }
 
   &__content figure {
@@ -140,7 +136,7 @@ main {
       object-fit: cover;
       width: 40rem;
       height: 15rem;
-      border-radius: 2rem 2rem 0 0;
+      border-radius: 1.5rem 1.5rem 0 0;
       position: relative;
       left: -2.5rem;
       top: -1rem;
@@ -159,6 +155,22 @@ main {
       top: -1rem;
       left: -1rem;
       font-size: 1.1rem;
+    }
+
+    & div {
+      position: absolute;
+      left: 33.5rem;
+      Z-index: 1000;
+      width: 5.5rem;
+      height: 2rem;
+      background-color: $color-tertiary;
+
+      & p {
+        position: relative;
+        left: 0.5rem;
+        top: -0.7rem;
+
+      }
     }
   }
 

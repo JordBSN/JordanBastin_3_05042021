@@ -1,15 +1,27 @@
 .header {
   position: relative;
+  padding: 1.5rem 0 1.5rem 0;
+  text-align: center;
   height: 4rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   z-index: 1000;
 
-
   &__logo {
-    position: relative;
-    top: 0.5rem;
     font-family: "Shrikhand", "cursive";
     margin: 0;
-    text-align: center;
+  }
+
+  &__return {
+    position: relative;
+    top: -0.5rem;
+    left: -33rem;
+  }
+
+  &__img {
+    position: relative;
+    top: 1.5rem;
+    width: 100%;
+    height: 32rem;
+    object-fit: cover;
   }
 }

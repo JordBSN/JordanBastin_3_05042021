@@ -1,0 +1,19 @@
+@mixin btn ($left, $top, $width, $height) {
+  position: relative;
+  left: $left;
+  top: $top;
+  width: $width;
+  height: $height;
+  border-radius: 3rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: $box-shadow;
+  background: linear-gradient(0deg, $color-primary, $color-secondary);
+  color: #FFFFFF;
+  border: 0;
+  transition: transform .2s;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}

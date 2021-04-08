@@ -10,11 +10,6 @@ a {
   color: black;
 }
 
-img {
-  width: 200px;
-  height: 200px;
-}
-
 .icons {
   width: 30px;
   height: 30px;
@@ -22,16 +17,27 @@ img {
 
 .header {
   position: relative;
+  padding: 1.5rem 0 1.5rem 0;
+  text-align: center;
   height: 4rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   z-index: 1000;
 }
 .header__logo {
-  position: relative;
-  top: 0.5rem;
   font-family: "Shrikhand", "cursive";
   margin: 0;
-  text-align: center;
+}
+.header__return {
+  position: relative;
+  top: -0.5rem;
+  left: -33rem;
+}
+.header__img {
+  position: relative;
+  top: 1.5rem;
+  width: 100%;
+  height: 32rem;
+  object-fit: cover;
 }
 
 main {
@@ -68,8 +74,9 @@ main {
 .explore__btn {
   position: relative;
   left: 32rem;
-  width: 19rem;
-  height: 5rem;
+  top: 0;
+  width: 20rem;
+  height: 4rem;
   border-radius: 3rem;
   font-size: 1.2rem;
   cursor: pointer;
@@ -77,6 +84,10 @@ main {
   background: linear-gradient(0deg, #9356DC, #FF79DA);
   color: #FFFFFF;
   border: 0;
+  transition: transform 0.2s;
+}
+.explore__btn:hover {
+  transform: scale(1.01);
 }
 
 .mod-operator {
@@ -103,9 +114,10 @@ main {
   justify-content: center;
   align-items: center;
   width: 20rem;
-  height: 5rem;
-  margin-right: 2rem;
-  border-radius: 2rem;
+  height: 4rem;
+  margin-right: 3rem;
+  padding-right: 3rem;
+  border-radius: 1rem;
   background-color: #f3f3f3;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
 }
@@ -120,7 +132,7 @@ main {
   width: 2rem;
   height: 2rem;
   position: relative;
-  left: -3.5rem;
+  left: -4rem;
 }
 .mod-operator__list__item__icons {
   position: relative;
@@ -150,15 +162,19 @@ main {
   width: 40rem;
   height: 20rem;
   margin: 0 0.5rem 2rem 0.5rem;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   position: relative;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
+  transition: transform 0.2s;
+}
+.restaurants__content:hover {
+  transform: scale(1.01);
 }
 .restaurants__content figure img {
   object-fit: cover;
   width: 40rem;
   height: 15rem;
-  border-radius: 2rem 2rem 0 0;
+  border-radius: 1.5rem 1.5rem 0 0;
   position: relative;
   left: -2.5rem;
   top: -1rem;
@@ -176,10 +192,59 @@ main {
   left: -1rem;
   font-size: 1.1rem;
 }
+.restaurants__content figure div {
+  position: absolute;
+  left: 33.5rem;
+  Z-index: 1000;
+  width: 5.5rem;
+  height: 2rem;
+  background-color: #99E2D0;
+}
+.restaurants__content figure div p {
+  position: relative;
+  left: 0.5rem;
+  top: -0.7rem;
+}
 .restaurants i {
   position: relative;
   top: -5rem;
   left: 35rem;
+}
+
+.restaurent {
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  background-color: #f3f3f3;
+  position: relative;
+  z-index: 1001;
+}
+.restaurent__title {
+  display: flex;
+  flex-basis: 100%;
+}
+.restaurent__icons {
+  position: relative;
+  top: -3rem;
+  left: 75rem;
+}
+.restaurent__order {
+  position: relative;
+  left: 0;
+  top: 25rem;
+  width: 20rem;
+  height: 4rem;
+  border-radius: 3rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  color: #FFFFFF;
+  border: 0;
+  transition: transform 0.2s;
+}
+.restaurent__order:hover {
+  transform: scale(1.01);
 }
 
 .footer {

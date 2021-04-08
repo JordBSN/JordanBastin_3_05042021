@@ -1,0 +1,22 @@
+.restaurent {
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  background-color: $bg-color-primary;
+  position: relative;
+  z-index: 1001;
+
+  &__title {
+    display: flex;
+    flex-basis: 100%;
+  }
+
+  &__icons {
+    position: relative;
+    top: -3rem;
+    left: 75rem;
+  }
+  &__order {
+    @include btn(0,25rem, 20rem, 4rem);
+  }
+}
