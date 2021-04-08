@@ -21,16 +21,11 @@ a {
   text-align: center;
   height: 4rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-  z-index: 1000;
+  z-index: 1;
 }
 .header__logo {
   font-family: "Shrikhand", "cursive";
   margin: 0;
-}
-.header__return {
-  position: relative;
-  top: -0.5rem;
-  left: -33rem;
 }
 .header__img {
   position: relative;
@@ -38,6 +33,26 @@ a {
   width: 100%;
   height: 32rem;
   object-fit: cover;
+}
+
+.footer {
+  background-color: #4c4747;
+  color: #FFFFFF;
+  padding: 0.5rem 0 0.5rem 0;
+}
+.footer__title {
+  font-family: "Shrikhand", "cursive";
+  margin-left: 3rem;
+}
+.footer__list {
+  list-style: none;
+  margin-left: 1rem;
+}
+.footer__list li {
+  margin-bottom: 0.8rem;
+}
+.footer__list li i {
+  margin-right: 0.3rem;
 }
 
 main {
@@ -211,29 +226,44 @@ main {
   left: 35rem;
 }
 
+.header__return {
+  position: relative;
+  top: -0.5rem;
+  left: -33rem;
+}
+
 .restaurent {
   display: flex;
-  flex-flow: row wrap;
   height: auto;
   background-color: #f3f3f3;
   position: relative;
-  z-index: 1001;
+  z-index: 1;
+  top: 26rem;
+  left: -2rem;
+  width: 95%;
+  padding-bottom: 5rem;
+  border-radius: 1rem 1rem 0 0;
 }
 .restaurent__title {
   display: flex;
-  flex-basis: 100%;
+  width: 100%;
+  font-family: "Shrikhand", "cursive";
 }
 .restaurent__icons {
   position: relative;
   top: -3rem;
-  left: 75rem;
+  left: 65rem;
+}
+.restaurent__menu {
+  display: flex;
+  flex-flow: row nowrap;
 }
 .restaurent__order {
   position: relative;
-  left: 0;
+  left: -27rem;
   top: 25rem;
-  width: 20rem;
-  height: 4rem;
+  width: 10rem;
+  height: 2.5rem;
   border-radius: 3rem;
   font-size: 1.2rem;
   cursor: pointer;
@@ -247,24 +277,21 @@ main {
   transform: scale(1.01);
 }
 
-.footer {
-  background-color: #4c4747;
-  color: #FFFFFF;
-  padding: 0.5rem 0 0.5rem 0;
+.menu-card {
+  background-color: #FFFFFF;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
+  margin: 1rem 1rem 0 1rem;
+  border-radius: 1rem;
+  width: 25rem;
+  height: 5rem;
 }
-.footer__title {
-  font-family: "Shrikhand", "cursive";
-  margin-left: 3rem;
+.menu-card div {
+  position: relative;
+  left: 25rem;
 }
-.footer__list {
-  list-style: none;
-  margin-left: 1rem;
-}
-.footer__list li {
-  margin-bottom: 0.8rem;
-}
-.footer__list li i {
-  margin-right: 0.3rem;
+
+.footer-menu {
+  margin-top: 26rem;
 }
 
 /*# sourceMappingURL=style.css.map */

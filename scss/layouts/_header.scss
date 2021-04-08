@@ -4,17 +4,11 @@
   text-align: center;
   height: 4rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-  z-index: 1000;
+  z-index: 1;
 
   &__logo {
-    font-family: "Shrikhand", "cursive";
+    font-family: $font-title;
     margin: 0;
-  }
-
-  &__return {
-    position: relative;
-    top: -0.5rem;
-    left: -33rem;
   }
 
   &__img {

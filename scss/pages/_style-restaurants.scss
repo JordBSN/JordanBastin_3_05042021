@@ -1,22 +1,58 @@
+.header__return {
+  position: relative;
+  top: -0.5rem;
+  left: -33rem;
+}
+
 .restaurent {
   display: flex;
-  flex-flow: row wrap;
   height: auto;
   background-color: $bg-color-primary;
   position: relative;
-  z-index: 1001;
+  z-index: 1;
+  top: 26rem;
+  left: -2rem;
+  width: 95%;
+  padding-bottom: 5rem;
+  border-radius: 1rem 1rem 0 0;
 
   &__title {
     display: flex;
-    flex-basis: 100%;
+    width: 100%;
+    font-family: $font-title;
   }
 
   &__icons {
     position: relative;
     top: -3rem;
-    left: 75rem;
+    left: 65rem;
   }
+
+  &__menu{
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
   &__order {
-    @include btn(0,25rem, 20rem, 4rem);
+    @include btn(-27rem, 25rem, 10rem, 2.5rem);
   }
 }
+.menu-card {
+  background-color: #FFFFFF;
+  box-shadow: $box-shadow;
+  margin: 1rem 1rem 0 1rem;
+  border-radius: 1rem;
+  width: 25rem;
+  height: 5rem;
+
+   & div {
+     position: relative;
+     left: 25rem;
+   }
+}
+
+.footer-menu {
+  margin-top: 26rem;
+}
+
+
