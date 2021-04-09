@@ -4,9 +4,7 @@ main {
 
 // ---------  explore ------------
 .explore {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+  text-align: center;
   background-color: #fafafa;
   position: relative;
   padding: 0 0 2rem 0;
@@ -35,7 +33,8 @@ main {
   }
 
   &__btn {
-    @include btn(32rem, 0 ,20rem, 4rem);
+    @include btn(0, 0 ,20rem, 4rem);
+
   }
 }
 
@@ -109,8 +108,9 @@ main {
   background-color: $bg-color-primary;
 
   &__title {
+    margin-left: auto;
     position: relative;
-    left: 2rem;
+    left: 5rem;
     display: flex;
     flex-basis: 100%;
 
@@ -150,13 +150,6 @@ main {
       font-size: 1.4rem;
     }
 
-    & p {
-      position: relative;
-      top: -1rem;
-      left: -1rem;
-      font-size: 1.1rem;
-    }
-
     & div {
       position: absolute;
       left: 33.5rem;
@@ -172,6 +165,13 @@ main {
 
       }
     }
+  }
+
+  & p {
+    position: relative;
+    top: -1rem;
+    left: 1rem;
+    font-size: 1.1rem;
   }
 
   & i {

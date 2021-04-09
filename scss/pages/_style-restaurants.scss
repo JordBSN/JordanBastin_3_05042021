@@ -1,58 +1,74 @@
-.header__return {
-  position: relative;
-  top: -0.5rem;
-  left: -33rem;
-}
 
 .restaurent {
   display: flex;
-  height: auto;
   background-color: $bg-color-primary;
   position: relative;
   z-index: 1;
-  top: 26rem;
-  left: -2rem;
-  width: 95%;
-  padding-bottom: 5rem;
+  top: 29rem;
+  max-width: 1280px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding-bottom: 10rem;
   border-radius: 1rem 1rem 0 0;
 
   &__title {
-    display: flex;
-    width: 100%;
+    position: absolute;
+    left: 1rem;
+    text-transform: uppercase;
     font-family: $font-title;
   }
 
   &__icons {
     position: relative;
-    top: -3rem;
-    left: 65rem;
+    top: 1.5rem;
+    left: 75rem;
   }
 
-  &__menu{
+  &__menu {
     display: flex;
     flex-flow: row nowrap;
   }
 
   &__order {
-    @include btn(-27rem, 25rem, 10rem, 2.5rem);
+    margin-top: auto;
+    @include btn(-45rem, 8rem, 17rem, 3rem);
   }
 }
+
 .menu-card {
+  position: relative;
   background-color: #FFFFFF;
   box-shadow: $box-shadow;
   margin: 1rem 1rem 0 1rem;
   border-radius: 1rem;
-  width: 25rem;
+  width: 24rem;
   height: 5rem;
+  top: 4rem;
+  left: -2rem;
 
-   & div {
-     position: relative;
-     left: 25rem;
-   }
+  & h3 {
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+  }
+  & p {
+    position: relative;
+    top: 0.3rem;
+    left: 1rem;
+    font-weight: lighter;
+  }
+  & div {
+    position: relative;
+    top: -2rem;
+    left: 21rem;
+  }
 }
 
-.footer-menu {
-  margin-top: 26rem;
+.menu-type {
+  position: relative;
+  top: 4rem;
+  font-weight: lighter;
 }
 
 

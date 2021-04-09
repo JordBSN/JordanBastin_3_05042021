@@ -17,7 +17,7 @@ a {
 
 .header {
   position: relative;
-  padding: 1.5rem 0 1.5rem 0;
+  padding: 1rem 0 0 0;
   text-align: center;
   height: 4rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
@@ -26,6 +26,15 @@ a {
 .header__logo {
   font-family: "Shrikhand", "cursive";
   margin: 0;
+}
+.header__return {
+  position: absolute;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  top: 30%;
+  display: flex;
+  font-size: 1.2rem;
 }
 .header__img {
   position: relative;
@@ -55,14 +64,17 @@ a {
   margin-right: 0.3rem;
 }
 
+.footer-menu {
+  position: relative;
+  top: 29rem;
+}
+
 main {
   margin: 0 0 0 auto;
 }
 
 .explore {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+  text-align: center;
   background-color: #fafafa;
   position: relative;
   padding: 0 0 2rem 0;
@@ -88,7 +100,7 @@ main {
 }
 .explore__btn {
   position: relative;
-  left: 32rem;
+  left: 0;
   top: 0;
   width: 20rem;
   height: 4rem;
@@ -167,8 +179,9 @@ main {
   background-color: #f3f3f3;
 }
 .restaurants__title {
+  margin-left: auto;
   position: relative;
-  left: 2rem;
+  left: 5rem;
   display: flex;
   flex-basis: 100%;
 }
@@ -201,12 +214,6 @@ main {
   font-weight: bolder;
   font-size: 1.4rem;
 }
-.restaurants__content figure p {
-  position: relative;
-  top: -1rem;
-  left: -1rem;
-  font-size: 1.1rem;
-}
 .restaurants__content figure div {
   position: absolute;
   left: 33.5rem;
@@ -220,50 +227,53 @@ main {
   left: 0.5rem;
   top: -0.7rem;
 }
+.restaurants p {
+  position: relative;
+  top: -1rem;
+  left: 1rem;
+  font-size: 1.1rem;
+}
 .restaurants i {
   position: relative;
   top: -5rem;
   left: 35rem;
 }
 
-.header__return {
-  position: relative;
-  top: -0.5rem;
-  left: -33rem;
-}
-
 .restaurent {
   display: flex;
-  height: auto;
   background-color: #f3f3f3;
   position: relative;
   z-index: 1;
-  top: 26rem;
-  left: -2rem;
-  width: 95%;
-  padding-bottom: 5rem;
+  top: 29rem;
+  max-width: 1280px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding-bottom: 10rem;
   border-radius: 1rem 1rem 0 0;
 }
 .restaurent__title {
-  display: flex;
-  width: 100%;
+  position: absolute;
+  left: 1rem;
+  text-transform: uppercase;
   font-family: "Shrikhand", "cursive";
 }
 .restaurent__icons {
   position: relative;
-  top: -3rem;
-  left: 65rem;
+  top: 1.5rem;
+  left: 75rem;
 }
 .restaurent__menu {
   display: flex;
   flex-flow: row nowrap;
 }
 .restaurent__order {
+  margin-top: auto;
   position: relative;
-  left: -27rem;
-  top: 25rem;
-  width: 10rem;
-  height: 2.5rem;
+  left: -45rem;
+  top: 8rem;
+  width: 17rem;
+  height: 3rem;
   border-radius: 3rem;
   font-size: 1.2rem;
   cursor: pointer;
@@ -278,20 +288,37 @@ main {
 }
 
 .menu-card {
+  position: relative;
   background-color: #FFFFFF;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
   margin: 1rem 1rem 0 1rem;
   border-radius: 1rem;
-  width: 25rem;
+  width: 24rem;
   height: 5rem;
+  top: 4rem;
+  left: -2rem;
+}
+.menu-card h3 {
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+}
+.menu-card p {
+  position: relative;
+  top: 0.3rem;
+  left: 1rem;
+  font-weight: lighter;
 }
 .menu-card div {
   position: relative;
-  left: 25rem;
+  top: -2rem;
+  left: 21rem;
 }
 
-.footer-menu {
-  margin-top: 26rem;
+.menu-type {
+  position: relative;
+  top: 4rem;
+  font-weight: lighter;
 }
 
 /*# sourceMappingURL=style.css.map */

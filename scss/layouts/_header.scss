@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  padding: 1.5rem 0 1.5rem 0;
+  padding: 1rem 0 0 0;
   text-align: center;
   height: 4rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
@@ -9,6 +9,16 @@
   &__logo {
     font-family: $font-title;
     margin: 0;
+  }
+
+  &__return {
+    position: absolute;
+    left: 2rem;
+    height: 2rem;
+    width: 2rem;
+    top: 30%;
+    display: flex;
+    font-size: 1.2rem;
   }
 
   &__img {
