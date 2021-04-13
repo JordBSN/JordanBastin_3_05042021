@@ -17,3 +17,27 @@
     transform: scale(1.01);
   }
 }
+
+@mixin for-little-phone {
+  @media (max-width: 375px) { @content; }
+}
+
+@mixin for-phone {
+  @media (max-width: 599px) { @content; }
+}
+
+@mixin for-little-tablet {
+  @media (min-width: 600px) { @content; }
+}
+
+@mixin for-tablet {
+  @media (min-width: 768px) { @content; }
+}
+
+@mixin for-big-tablet {
+  @media (min-width: 1024px) { @content; }
+}
+
+@mixin for-litle-desktop  {
+  @media (min-width: 1200px) { @content; }
+}

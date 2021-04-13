@@ -19,6 +19,9 @@
     top: 30%;
     display: flex;
     font-size: 1.2rem;
+    @include for-little-phone {
+      left: 1rem;
+    }
   }
 
   &__img {
@@ -27,5 +30,8 @@
     width: 100%;
     height: 32rem;
     object-fit: cover;
+    @include for-little-phone {
+      height: 18rem;
+    }
   }
 }

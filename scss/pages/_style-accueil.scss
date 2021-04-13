@@ -33,7 +33,7 @@ main {
   }
 
   &__btn {
-    @include btn(0, 0 ,20rem, 4rem);
+    @include btn(0, 0, 20rem, 4rem);
 
   }
 }
@@ -51,12 +51,20 @@ main {
     justify-content: center;
     margin: 0;
     position: relative;
+    @include for-phone {
+      left: -6rem;
+      margin-bottom: 1rem;
+    }
   }
 
   &__list {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    @include for-phone {
+      display: flex;
+      flex-flow: column wrap;
+    }
 
     &__item {
       display: flex;
@@ -70,6 +78,14 @@ main {
       border-radius: 1rem;
       background-color: $bg-color-primary;
       box-shadow: $box-shadow;
+      @include for-phone {
+        width: 18rem;
+        margin: 0 0 2rem 1rem;
+        padding-right: 2rem;
+      }
+      @include for-little-phone {
+        margin-left: -0.5rem;
+      }
 
       &__number {
         display: flex;
@@ -83,12 +99,23 @@ main {
         height: 2rem;
         position: relative;
         left: -4rem;
+        @include for-phone {
+          left: -3rem;
+        }
       }
 
       &__icons {
         position: relative;
         top: 0;
         left: -2.5rem;
+        @include for-phone {
+
+        }
+        @include for-little-phone {
+          display: flex;
+          align-items: center;
+          left: -2rem;
+        }
       }
 
       &__txt {
@@ -106,14 +133,18 @@ main {
   justify-content: center;
   flex-flow: row wrap;
   background-color: $bg-color-primary;
+  @include for-phone {
+
+  }
 
   &__title {
-    margin-left: auto;
-    position: relative;
-    left: 5rem;
     display: flex;
     flex-basis: 100%;
-
+    margin-left: 1.5rem;
+    padding-top: 2rem;
+    @include for-phone {
+      margin: 0 0 1rem 1rem;
+    }
   }
 
   &__content {
@@ -122,9 +153,13 @@ main {
     height: 20rem;
     margin: 0 0.5rem 2rem 0.5rem;
     border-radius: 1.5rem;
-    position: relative;
     box-shadow: $box-shadow;
     transition: transform .2s;
+    @include for-phone {
+      width: 22rem;
+      height: 15rem;
+      margin-left: 1rem;
+    }
 
     &:hover {
       transform: scale(1.01);
@@ -140,6 +175,10 @@ main {
       position: relative;
       left: -2.5rem;
       top: -1rem;
+      @include for-phone {
+        width: 22rem;
+        height: 10rem;
+      }
     }
 
     & figcaption {
@@ -148,6 +187,9 @@ main {
       left: -1rem;
       font-weight: bolder;
       font-size: 1.4rem;
+      @include for-phone {
+        left: -2rem;
+      }
     }
 
     & div {
@@ -157,12 +199,14 @@ main {
       width: 5.5rem;
       height: 2rem;
       background-color: $color-tertiary;
+      @include for-phone {
+        left: 16rem;
+      }
 
       & p {
         position: relative;
         left: 0.5rem;
         top: -0.7rem;
-
       }
     }
   }
@@ -172,11 +216,18 @@ main {
     top: -1rem;
     left: 1rem;
     font-size: 1.1rem;
+    @include for-phone {
+      left: 0.5rem;
+    }
+
   }
 
   & i {
     position: relative;
     top: -5rem;
     left: 35rem;
+    @include for-phone {
+      left: 19rem;
+    }
   }
 }

@@ -1,6 +1,7 @@
 
 .restaurent {
   display: flex;
+  flex-flow: row nowrap;
   background-color: $bg-color-primary;
   position: relative;
   z-index: 1;
@@ -9,20 +10,42 @@
   width: 100%;
   height: auto;
   margin: auto;
-  padding-bottom: 10rem;
+  padding-bottom: 13rem;
   border-radius: 1rem 1rem 0 0;
+  @include for-phone {
+    max-width: 414px;
+    width: 100%;
+    top: 15rem;
+    flex-flow: column nowrap;
+    padding-bottom: 5rem;
+    padding-right: 0;
+    margin: 0;
+  }
+  @include for-little-phone {
+    max-width: 375px;
+  }
 
   &__title {
     position: absolute;
     left: 1rem;
     text-transform: uppercase;
     font-family: $font-title;
+    @include for-phone {
+      font-size: 1.4rem;
+    }
   }
 
   &__icons {
     position: relative;
     top: 1.5rem;
     left: 75rem;
+    @include for-phone {
+      max-width: 2rem;
+      top: 1rem;
+      left: 20rem;
+      margin: 0;
+
+    }
   }
 
   &__menu {
@@ -31,8 +54,13 @@
   }
 
   &__order {
-    margin-top: auto;
-    @include btn(-45rem, 8rem, 17rem, 3rem);
+    @include btn(-45rem, 30rem, 10rem, 3rem);
+    @include for-phone {
+      @include btn(8rem, 2rem, 10rem, 3rem);
+    }
+    @include for-little-phone {
+      @include btn(6.5rem, 2rem, 10rem, 3rem);
+    }
   }
 }
 
@@ -46,6 +74,16 @@
   height: 5rem;
   top: 4rem;
   left: -2rem;
+  @include for-phone {
+    width: 23rem;
+    left: 0.5rem;
+    top: 0;
+  }
+    @include for-little-phone {
+      width: 21rem;
+      left: 0;
+    }
+
 
   & h3 {
     position: relative;
@@ -57,18 +95,30 @@
     top: 0.3rem;
     left: 1rem;
     font-weight: lighter;
+    @include for-phone {
+      font-size: 0.9rem;
+    }
   }
   & div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     position: relative;
     top: -2rem;
-    left: 21rem;
+    left: -1rem;
   }
 }
 
 .menu-type {
   position: relative;
   top: 4rem;
+  left: -0.7rem;
   font-weight: lighter;
+  @include for-phone {
+    margin: 3rem 0 1rem 1rem;
+    top: 0;
+    left: 0;
+  }
 }
 
 
