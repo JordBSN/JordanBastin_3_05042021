@@ -55,6 +55,9 @@ main {
       left: -6rem;
       margin-bottom: 1rem;
     }
+    @include for-litle-desktop{
+      left: -7rem;
+    }
   }
 
   &__list {
@@ -154,15 +157,10 @@ main {
     margin: 0 0.5rem 2rem 0.5rem;
     border-radius: 1.5rem;
     box-shadow: $box-shadow;
-    transition: transform .2s;
     @include for-phone {
       width: 22rem;
       height: 15rem;
       margin-left: 1rem;
-    }
-
-    &:hover {
-      transform: scale(1.01);
     }
   }
 
@@ -194,13 +192,16 @@ main {
 
     & div {
       position: absolute;
-      left: 33.5rem;
+      margin-left: 30rem;
       Z-index: 1000;
       width: 5.5rem;
       height: 2rem;
       background-color: $color-tertiary;
       @include for-phone {
-        left: 16rem;
+        left: -12.5rem;
+      }
+      @include for-little-phone {
+        left: -13rem;
       }
 
       & p {

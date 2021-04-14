@@ -151,6 +151,11 @@ main {
     margin-bottom: 1rem;
   }
 }
+@media (min-width: 1200px) {
+  .mod-operator__title {
+    left: -7rem;
+  }
+}
 .mod-operator__list {
   display: flex;
   flex-flow: row nowrap;
@@ -247,7 +252,6 @@ main {
   margin: 0 0.5rem 2rem 0.5rem;
   border-radius: 1.5rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
-  transition: transform 0.2s;
 }
 @media (max-width: 599px) {
   .restaurants__content {
@@ -255,9 +259,6 @@ main {
     height: 15rem;
     margin-left: 1rem;
   }
-}
-.restaurants__content:hover {
-  transform: scale(1.01);
 }
 .restaurants__content figure img {
   object-fit: cover;
@@ -288,7 +289,7 @@ main {
 }
 .restaurants__content figure div {
   position: absolute;
-  left: 33.5rem;
+  margin-left: 30rem;
   Z-index: 1000;
   width: 5.5rem;
   height: 2rem;
@@ -296,7 +297,12 @@ main {
 }
 @media (max-width: 599px) {
   .restaurants__content figure div {
-    left: 16rem;
+    left: -12.5rem;
+  }
+}
+@media (max-width: 375px) {
+  .restaurants__content figure div {
+    left: -13rem;
   }
 }
 .restaurants__content figure div p {
