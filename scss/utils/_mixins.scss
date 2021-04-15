@@ -27,17 +27,17 @@
 }
 
 @mixin for-little-tablet {
-  @media (min-width: 600px) { @content; }
+  @media (max-width: 600px) { @content; }
 }
 
 @mixin for-tablet {
-  @media (min-width: 768px) { @content; }
+  @media (max-width: 768px) { @content; }
 }
 
 @mixin for-big-tablet {
-  @media (min-width: 1024px) { @content; }
+  @media (max-width: 1024px) { @content; }
 }
 
-@mixin for-litle-desktop  {
-  @media (min-width: 1200px) { @content; }
+@mixin for-little-desktop  {
+  @media (max-width: 1200px) { @content; }
 }

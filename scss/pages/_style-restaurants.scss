@@ -12,11 +12,17 @@
   margin: auto;
   padding-bottom: 13rem;
   border-radius: 1rem 1rem 0 0;
+  @include for-little-desktop {
+    justify-content: center;
+    max-width: 1200px;
+    flex-flow: row wrap;
+  }
+
   @include for-phone {
-    max-width: 414px;
-    width: 100%;
+    max-width: 599px;
     top: 15rem;
     flex-flow: column nowrap;
+    align-items: center;
     padding-bottom: 5rem;
     padding-right: 0;
     margin: 0;
@@ -31,6 +37,7 @@
     text-transform: uppercase;
     font-family: $font-title;
     @include for-phone {
+      top: 0;
       font-size: 1.4rem;
     }
   }
@@ -38,13 +45,21 @@
   &__icons {
     position: relative;
     top: 1.5rem;
-    left: 75rem;
+    left: 70rem;
+    @include for-little-desktop {
+      left: 53rem;
+    }
+    @include for-big-tablet{
+      left: 33rem;
+    }
+    @include for-tablet {
+      left: 25rem;
+    }
     @include for-phone {
       max-width: 2rem;
       top: 1rem;
-      left: 20rem;
+      left: 10rem;
       margin: 0;
-
     }
   }
 
@@ -55,11 +70,17 @@
 
   &__order {
     @include btn(-45rem, 30rem, 10rem, 3rem);
-    @include for-phone {
-      @include btn(8rem, 2rem, 10rem, 3rem);
+    // btn order little desktop
+    @include for-little-desktop {
+      @include btn(-20rem, 30rem, 10rem, 3rem);
     }
+    // btn order phone
+    @include for-phone {
+      @include btn(0, 2rem, 10rem, 3rem);
+    }
+    // btn order little phone
     @include for-little-phone {
-      @include btn(6.5rem, 2rem, 10rem, 3rem);
+      @include btn(0, 2rem, 10rem, 3rem);
     }
   }
 }
@@ -70,19 +91,22 @@
   box-shadow: $box-shadow;
   margin: 1rem 1rem 0 1rem;
   border-radius: 1rem;
-  width: 24rem;
+  width: 23rem;
   height: 5rem;
   top: 4rem;
   left: -2rem;
+  @include for-big-tablet{
+    margin-bottom: 1.5rem;
+  }
   @include for-phone {
     width: 23rem;
     left: 0.5rem;
     top: 0;
   }
-    @include for-little-phone {
-      width: 21rem;
-      left: 0;
-    }
+  @include for-little-phone {
+    width: 21rem;
+    left: 0;
+  }
 
 
   & h3 {
@@ -90,6 +114,7 @@
     top: 1rem;
     left: 1rem;
   }
+
   & p {
     position: relative;
     top: 0.3rem;
@@ -99,6 +124,7 @@
       font-size: 0.9rem;
     }
   }
+
   & div {
     display: flex;
     justify-content: flex-end;
@@ -120,5 +146,27 @@
     left: 0;
   }
 }
+
+.restaurent__main-course {
+  @include for-big-tablet{
+    margin-left: 2rem;
+  }
+  @include for-phone {
+    margin-left: 0;
+  }
+}
+
+.restaurent__dessert {
+  @include for-little-desktop {
+    margin-left: 12rem;
+  }
+  @include for-tablet {
+    margin-left: 12rem;
+  }
+  @include for-little-tablet {
+    margin-left: 0;
+  }
+}
+
 
 
