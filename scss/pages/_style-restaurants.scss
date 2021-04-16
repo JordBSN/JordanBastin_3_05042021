@@ -140,6 +140,16 @@
   top: 4rem;
   left: -0.7rem;
   font-weight: lighter;
+
+  &::after {
+    content: "";
+    width: 2.5rem;
+    height: 0.25rem;
+    background-color: $color-tertiary;
+    position: absolute;
+    left: 0;
+    top: 2rem;
+  }
   @include for-phone {
     margin: 3rem 0 1rem 1rem;
     top: 0;

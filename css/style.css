@@ -637,6 +637,15 @@ main {
   left: -0.7rem;
   font-weight: lighter;
 }
+.menu-type::after {
+  content: "";
+  width: 2.5rem;
+  height: 0.25rem;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  top: 2rem;
+}
 @media (max-width: 599px) {
   .menu-type {
     margin: 3rem 0 1rem 1rem;
