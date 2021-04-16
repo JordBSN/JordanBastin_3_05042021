@@ -6,7 +6,9 @@ html, body {
 }
 
 body {
-  max-width: 1280px;
+  display: flex;
+  flex-flow: column nowrap;
+  box-sizing: content-box;
   width: 100%;
 }
 @media (max-width: 1200px) {
@@ -49,11 +51,6 @@ body {
 a {
   text-decoration: none;
   color: black;
-}
-
-.icons {
-  width: 30px;
-  height: 30px;
 }
 
 .header {
@@ -205,6 +202,7 @@ main {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  position: relative;
 }
 @media (max-width: 1200px) {
   .mod-operator__list {
@@ -212,21 +210,20 @@ main {
     flex-flow: row wrap;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .mod-operator__list {
-    margin-left: 2rem;
+    left: 2rem;
   }
 }
 @media (max-width: 599px) {
   .mod-operator__list {
     display: flex;
     flex-flow: column wrap;
-    margin-left: 0;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 599px) {
   .mod-operator__list {
-    margin-left: 0;
+    left: -0.5rem;
   }
 }
 .mod-operator__list__item {
@@ -300,6 +297,7 @@ main {
   justify-content: center;
   flex-flow: row wrap;
   background-color: #f3f3f3;
+  width: 100%;
 }
 .restaurants__title {
   display: flex;
@@ -320,12 +318,13 @@ main {
   margin: 0 0.5rem 2rem 0.5rem;
   border-radius: 1.5rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
+  position: relative;
 }
 @media (max-width: 599px) {
   .restaurants__content {
     width: 22rem;
     height: 15rem;
-    margin-left: 1rem;
+    left: 0;
   }
 }
 .restaurants__content figure img {
@@ -365,18 +364,18 @@ main {
 }
 @media (max-width: 599px) {
   .restaurants__content figure div {
-    left: -12.5rem;
+    left: -14rem;
   }
 }
 @media (max-width: 375px) {
   .restaurants__content figure div {
-    left: -13rem;
+    left: -14rem;
   }
 }
 .restaurants__content figure div p {
   position: relative;
-  left: 0.5rem;
-  top: -0.7rem;
+  left: 0.8rem;
+  top: -0.6rem;
 }
 .restaurants p {
   position: relative;
@@ -405,6 +404,11 @@ main {
     width: 1.5rem;
     height: 1.5rem;
     left: 17rem;
+  }
+}
+@media (max-width: 1024px) {
+  .restaurants i {
+    left: 37rem;
   }
 }
 @media (max-width: 599px) {

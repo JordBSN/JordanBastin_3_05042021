@@ -1,6 +1,5 @@
 main {
   margin: 0 0 0 auto;
-
 }
 
 // ---------  explore ------------
@@ -67,20 +66,20 @@ main {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    position: relative;
     @include for-little-desktop {
       display: flex;
       flex-flow: row wrap;
     }
-    @include for-little-tablet {
-      margin-left: 2rem;
+    @include for-big-tablet{
+      left: 2rem;
     }
     @include for-phone {
       display: flex;
       flex-flow: column wrap;
-      margin-left: 0;
     }
-    @include for-little-phone {
-      margin-left: 0;
+    @include for-phone {
+      left: -0.5rem;
     }
 
     &__item {
@@ -150,6 +149,7 @@ main {
   justify-content: center;
   flex-flow: row wrap;
   background-color: $bg-color-primary;
+  width: 100%;
 
   &__title {
     display: flex;
@@ -169,10 +169,11 @@ main {
     margin: 0 0.5rem 2rem 0.5rem;
     border-radius: 1.5rem;
     box-shadow: $box-shadow;
+    position: relative;
     @include for-phone {
       width: 22rem;
       height: 15rem;
-      margin-left: 1rem;
+      left: 0;
     }
   }
 
@@ -210,16 +211,16 @@ main {
       height: 2rem;
       background-color: $color-tertiary;
       @include for-phone {
-        left: -12.5rem;
+        left: -14rem;
       }
       @include for-little-phone {
-        left: -13rem;
+        left: -14rem;
       }
 
       & p {
         position: relative;
-        left: 0.5rem;
-        top: -0.7rem;
+        left: 0.8rem;
+        top: -0.6rem;
       }
     }
   }
@@ -247,6 +248,9 @@ main {
       width: 1.5rem;
       height: 1.5rem;
       left: 17rem;
+    }
+    @include for-big-tablet{
+      left: 37rem;
     }
     @include for-phone {
       left: 19rem;
